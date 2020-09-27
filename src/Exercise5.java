@@ -16,8 +16,8 @@ public class Exercise5 {
         System.out.print("Test 1     : ");
         int testGrade = input.nextInt();
 
-        double homeworkAvg = (homeworkGradeOne + homeworkGradeTwo + homeworkGradeThree) / 3;
-        double quizAvg = (quizGradeOne + quizGradeTwo) / 2;
+        double homeworkAvg = (double) (homeworkGradeOne + homeworkGradeTwo + homeworkGradeThree) / 3;
+        double quizAvg = (double) (quizGradeOne + quizGradeTwo) / 2;
         double markingPeriodGrade = (homeworkAvg * .15) + (quizAvg * .35) + (testGrade * .5);
 
         System.out.printf("\n%,.2f", markingPeriodGrade);
